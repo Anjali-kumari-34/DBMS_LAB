@@ -213,10 +213,6 @@ MariaDB [anjali_kumari]> SELECT d.DEPTNO, d.DNAME, SUM(e.SAL) AS TOTAL_SAL
 
 ## 10. Display employee number, name and location of the department in which he is working.
 ```sql
-MariaDB [anjali_kumari]> SELECT e.EMPNO, e.ENAME, d.LOC
-    -> FROM EMPLOYEE e
-    -> JOIN DEPARTMENT d ON e.DEPTNO = d.DEPTNO;
-ERROR 1054 (42S22): Unknown column 'd.LOC' in 'field list'
 MariaDB [anjali_kumari]> SELECT e.EMPNO, e.ENAME, d.LOCATION
     -> FROM EMPLOYEE E
     -> JOIN DEPARTMENT d ON e.DEPTNO = D.DEPTNO;

@@ -103,7 +103,7 @@ MariaDB [anjali_kumari]> SELECT e.Ename,d.Dname,e.SAL,e.COMM
 Empty set (0.001 sec)
 ```
 
-## Q8.Display those employees whose salary greater thaq his manager salary.
+## Q8.Display those employees whose salary greater than his manager salary.
 ```sql
 MariaDB [anjali_kumari]> SELECT e.Ename
     -> FROM Employee e
